@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Frequently Asked Questions | PC Games Hub</title>
+  <meta name="description" content="Find answers to the most common questions about PC Games Hub — purchases, game keys, refunds, account management, technical support, and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pcgameshub.com/faq.html">
+  <meta property="og:title" content="FAQ — PC Games Hub">
+  <meta property="og:description" content="Answers to the most common questions about purchases, refunds, game keys, and technical support.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"How quickly do I receive my game after purchase?","acceptedAnswer":{"@type":"Answer","text":"Your game key is delivered instantly to your email and account dashboard within seconds of payment confirmation, 24/7."}},
+      {"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"We accept Visa, Mastercard, Amex, PayPal, Apple Pay, Google Pay, and major cryptocurrencies."}},
+      {"@type":"Question","name":"Can I get a refund if a game doesn't work on my PC?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer a 30-day full refund policy for compatible issues, provided the key has not been activated."}},
+      {"@type":"Question","name":"Are the game keys legitimate?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. All keys are sourced directly from publishers and authorized distributors, verified and guaranteed to activate."}}
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .faq-categories { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:56px; }
+    @media(max-width:900px){ .faq-categories{grid-template-columns:repeat(2,1fr);} }
+    @media(max-width:480px){ .faq-categories{grid-template-columns:1fr;} }
+    .faq-cat-btn { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:20px 16px; text-align:center; cursor:pointer; transition:var(--transition); }
+    .faq-cat-btn:hover,.faq-cat-btn.active { border-color:var(--accent-1); background:rgba(99,102,241,0.08); }
+    .faq-cat-btn .cat-icon { font-size:1.75rem; margin-bottom:8px; }
+    .faq-cat-btn h3 { font-size:0.9rem; font-weight:600; margin-bottom:4px; }
+    .faq-cat-btn p { font-size:0.75rem; color:var(--text-muted); }
+    .faq-section-title { font-size:1.25rem; font-weight:700; margin:48px 0 20px; padding-bottom:12px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+    .faq-search { position:relative; max-width:560px; margin:0 auto 48px; }
+    .faq-search input { width:100%; padding:14px 20px 14px 48px; border-radius:var(--radius-full); border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary); font-size:1rem; transition:var(--transition); }
+    .faq-search input:focus { outline:none; border-color:var(--accent-1); box-shadow:0 0 0 3px var(--accent-glow); }
+    .faq-search .search-icon { position:absolute; left:16px; top:50%; transform:translateY(-50%); font-size:1.1rem; pointer-events:none; }
+  </style>
+</head>
+<body>
+
+<header class="navbar" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">🎮</div><span>PC Games<span class="text-gradient">Hub</span></span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <a href="products.html" class="btn btn-primary btn-sm nav-cta">Browse Games</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<section class="page-hero" aria-labelledby="faq-hero-title">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">›</span><span>FAQ</span></div>
+    <span class="badge">❓ Help Center</span>
+    <h1 id="faq-hero-title" class="display-2" style="margin-top:16px;">How Can We <span class="text-gradient">Help You?</span></h1>
+    <p>Find instant answers to the most common questions. Can't find yours? <a href="contact.html" style="color:var(--accent-1);">Contact our team</a> — we respond in under 2 hours.</p>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+
+    <!-- Search -->
+    <div class="faq-search animate-on-scroll" role="search">
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <input type="search" id="faq-search-input" placeholder="Search questions..." aria-label="Search FAQ">
+    </div>
+
+    <!-- Category Buttons -->
+    <div class="faq-categories animate-on-scroll" role="tablist" aria-label="FAQ categories">
+      <button class="faq-cat-btn active" role="tab" aria-selected="true" onclick="scrollToSection('purchases')">
+        <div class="cat-icon">🛒</div>
+        <h3>Purchases & Payment</h3>
+        <p>8 questions</p>
+      </button>
+      <button class="faq-cat-btn" role="tab" aria-selected="false" onclick="scrollToSection('keys')">
+        <div class="cat-icon">🔑</div>
+        <h3>Game Keys & Delivery</h3>
+        <p>6 questions</p>
+      </button>
+      <button class="faq-cat-btn" role="tab" aria-selected="false" onclick="scrollToSection('refunds')">
+        <div class="cat-icon">💰</div>
+        <h3>Refunds & Returns</h3>
+        <p>5 questions</p>
+      </button>
+      <button class="faq-cat-btn" role="tab" aria-selected="false" onclick="scrollToSection('account')">
+        <div class="cat-icon">👤</div>
+        <h3>Account & Security</h3>
+        <p>7 questions</p>
+      </button>
+    </div>
+
+    <!-- FAQ Items -->
+    <div class="faq-list" id="faq-container">
+
+      <!-- PURCHASES & PAYMENT -->
+      <div id="purchases" class="faq-section-title animate-on-scroll">🛒 Purchases & Payment</div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">How quickly do I receive my game after purchase?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Your game key is delivered instantly — typically within 3–10 seconds of payment confirmation. It's sent to your registered email address AND added directly to your account dashboard. We process orders 24/7/365, including weekends and holidays. If you don't receive your key within 15 minutes, check your spam folder and contact support.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">What payment methods do you accept?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We accept: Visa, Mastercard, American Express, Discover, PayPal, Apple Pay, Google Pay, Bitcoin, Ethereum, and USDC. Regional payment methods (Sofort, iDEAL, Boleto, PIX, etc.) are available based on your country. All transactions are secured with 256-bit SSL encryption and processed by our PCI-DSS Level 1 certified payment partners.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Is it safe to enter my credit card details on PC Games Hub?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely. We use industry-leading security practices: your card details are encrypted with 256-bit SSL and processed directly by Stripe (a PCI-DSS Level 1 certified processor). We never store your raw card number on our servers. Our platform undergoes regular third-party security audits and penetration testing.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Why was my payment declined?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Payments can be declined for several reasons: insufficient funds, card not enabled for international/online transactions, your bank flagging the transaction as suspicious, or incorrect billing details. First, verify your card details and billing address. If the issue persists, try a different payment method or contact your bank. Our fraud prevention systems may also flag unusual purchase patterns — contact support if you believe this is the case.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Do you charge any fees on top of the listed price?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">No hidden fees. The price you see is the price you pay. VAT/sales tax is included where legally required (EU, UK, Australia, etc.) and will be clearly displayed before checkout. For users in regions where we're required to collect tax, the applicable amount is shown at checkout. There are no processing fees, service fees, or surprise charges.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Can I purchase a game as a gift for someone else?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! During checkout, select "Buy as a Gift" and enter the recipient's email address. The game key will be sent to them directly with a personalized message. You can also purchase a key for yourself and forward it — game keys are just text codes and can be shared. Gift cards are also available in denominations from $10 to $100.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Do you offer student or military discounts?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! We offer a 10% discount for verified students (via SheerID verification) and a 15% discount for active military and veterans (via ID.me). These discounts apply to all full-price games and stack with loyalty points. Verification takes about 2 minutes. Visit your Account Settings to apply.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">I was charged but didn't receive my game key. What do I do?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">First, check your account dashboard under "My Games" — keys are always saved there regardless of email delivery. If it's not there, check your spam/junk folder. If you still can't find it, contact our support team with your order ID (found in your payment confirmation email) and we'll resend the key or issue a refund immediately. We resolve 99.8% of these cases within 30 minutes.</div></div>
+      </div>
+
+      <!-- GAME KEYS -->
+      <div id="keys" class="faq-section-title animate-on-scroll">🔑 Game Keys & Delivery</div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Are the game keys legitimate and authentic?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Every key sold on PC Games Hub is sourced directly from publishers, distributors, or authorized resellers. All keys are verified, unused, and guaranteed to activate successfully. We have zero tolerance for gray-market keys and maintain strict supplier vetting. Every batch of keys is tested before being listed. In the extremely rare case a key doesn't work, contact support for an immediate replacement or refund.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Which platforms are game keys for?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Each game listing clearly shows its platform (Steam, Epic Games Store, GOG, Battle.net, Origin/EA App, Ubisoft Connect, Xbox, etc.). Make sure you own an account on the correct platform before purchasing. Platform information is always displayed prominently on the product page and in your confirmation email.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Can I use a game key purchased in one country in another country?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Most keys are global/worldwide and work in any region. However, some publishers issue region-locked keys (e.g., "EU only" or "Americas only"). We clearly label all region restrictions on each product page. If you're in a different region than indicated, we recommend purchasing a globally unlocked key. Contact us before purchasing if you're unsure — we'll confirm compatibility for your specific region.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">How do I redeem a Steam key?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">1. Open Steam and log in. 2. Click "Games" in the top menu. 3. Select "Activate a Product on Steam." 4. Click "Next" → "I agree" → "Next." 5. Enter your key and click "Next." The game will be added to your library immediately. For other platforms, check the specific platform's help center — we include redemption instructions with every key.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Do game keys expire?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Almost all game keys do not expire and can be redeemed at any time. The rare exception is pre-order bonus keys or promotional keys, which may have a stated expiration date (always shown on the product page). Once a key is in your account library, it's yours indefinitely — even if the game is removed from our store.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">What if my game key is already used or invalid?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">This is very rare but we guarantee every key. If your key shows as "already used" or "invalid," contact support immediately with your order ID and a screenshot of the error. We'll investigate within 1 hour and either provide a replacement key or issue a full refund — your choice. We take key quality extremely seriously.</div></div>
+      </div>
+
+      <!-- REFUNDS -->
+      <div id="refunds" class="faq-section-title animate-on-scroll">💰 Refunds & Returns</div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">What is your refund policy?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We offer a 30-day refund policy for games that are defective, incompatible with your hardware as advertised, or materially not as described. The key must not have been activated on any gaming platform. Refunds are processed within 5–10 business days to your original payment method. For full details, see our <a href="terms.html#refunds" style="color:var(--accent-1)">Terms of Service</a>.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">I activated the key but the game doesn't work. Can I get a refund?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Once a key is activated on a gaming platform (Steam, Epic, etc.), it cannot technically be "returned" as the game is now linked to your platform account. However, we evaluate these cases individually. If the game was falsely advertised or fundamentally broken at launch, contact support with details — we often provide partial refunds, game credit, or replacement keys as a goodwill gesture, even for activated keys.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">How do I request a refund?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Three ways: 1. Email <a href="mailto:refunds@pcgameshub.com" style="color:var(--accent-1)">refunds@pcgameshub.com</a> with your order ID and reason. 2. Use the "Request Refund" button on any order in your account dashboard. 3. Start a live chat and our agents will process it immediately. Include your order ID for faster processing. Approved refunds are credited within 5–10 business days.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Can I exchange a game for a different one instead of a refund?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! If you'd prefer store credit or a direct exchange for another game of equal or lesser value, we're happy to arrange that. This is often faster than waiting for a card refund. Contact our support team and mention you'd like an exchange — it's usually processed within a few hours.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">What happens if I do a chargeback with my bank?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We strongly advise against filing a chargeback without contacting us first — we always resolve legitimate issues fairly and quickly. Unauthorized chargebacks may result in permanent account suspension and blacklisting from future purchases. If you have a genuine dispute, contact our support team first — we'll resolve it faster and without the complications a chargeback creates for both parties.</div></div>
+      </div>
+
+      <!-- ACCOUNT -->
+      <div id="account" class="faq-section-title animate-on-scroll">👤 Account & Security</div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">How do I create an account?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Click "Sign Up" in the top right corner. Enter your email and create a password (minimum 10 characters, one uppercase, one number). Verify your email via the link we send. That's it — your account is ready to use. You can also sign up using your Google, Steam, or Discord account for one-click registration.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">I forgot my password. How do I reset it?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Click "Sign In" → "Forgot Password" and enter your registered email. We'll send a secure reset link valid for 1 hour. If you don't receive it within 5 minutes, check spam or contact support with your account email. For accounts created via Google/Discord login, use those services' password recovery options.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">How do I enable two-factor authentication (2FA)?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Go to Account Settings → Security → Two-Factor Authentication. We support authenticator apps (Google Authenticator, Authy) and SMS. We strongly recommend using an authenticator app rather than SMS for better security. Once enabled, you'll need your password plus a 6-digit code to log in. Backup codes are provided — store them safely.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">Can I change my username or email address?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Go to Account Settings → Profile. You can change your username up to twice per year. To change your email address, you'll need to verify both the old and new address for security. Email changes take effect after 24 hours to prevent unauthorized modifications.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">How do I delete my account?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Go to Account Settings → Privacy → Delete Account. We'll ask you to confirm by entering your password. Your account will be deactivated immediately and queued for permanent deletion after 30 days (this grace period lets you recover it if it was accidental). Note: deleting your account does not entitle you to refunds, and transaction records are retained as required by law.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">I think my account was hacked. What should I do?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Act immediately: 1. Try to change your password at pcgameshub.com/reset-password. 2. Email <a href="mailto:security@pcgameshub.com" style="color:var(--accent-1)">security@pcgameshub.com</a> — we can lock your account within minutes. 3. Check if your email was compromised (use haveibeenpwned.com). 4. Review recent orders for unauthorized purchases — we'll refund any you didn't make. Our security team responds to account compromise reports within 1 hour, 24/7.</div></div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question">How does the loyalty rewards program work in detail?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Earn 1 point per $1 spent on purchases. Bonus points: 50 points for writing a review, 200 points per referral who makes their first purchase, 100 points on your birthday. Redeem at 100 points = $1 off. Tier benefits — Silver (500pts/year): 1.5x earn rate; Gold (2000pts/year): 2x earn + early access to sales; Diamond (5000pts/year): 3x earn + monthly free game + exclusive discounts. Points expire after 24 months of account inactivity.</div></div>
+      </div>
+
+    </div>
+
+    <!-- Still have questions -->
+    <div class="card animate-on-scroll" style="text-align:center; max-width:640px; margin:64px auto 0; padding:48px;">
+      <div style="font-size:2.5rem;margin-bottom:16px;">🤔</div>
+      <h2 style="margin-bottom:12px;">Still Have Questions?</h2>
+      <p style="color:var(--text-secondary);margin-bottom:28px;">Our support team is real humans available 24/7. Average response time is under 2 hours.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary btn-lg">💬 Contact Support</a>
+        <a href="#" class="btn btn-secondary btn-lg">⚡ Live Chat</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="logo-icon">🎮</div><span>PC Games<span class="text-gradient">Hub</span></span></a><p>The ultimate destination for PC and laptop gamers worldwide.</p><div class="social-links"><a href="#" class="social-link" aria-label="Twitter">🐦</a><a href="#" class="social-link" aria-label="Discord">💬</a><a href="#" class="social-link" aria-label="YouTube">📺</a></div></div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="products.html">All Games</a></li><li><a href="products.html">New Releases</a></li><li><a href="products.html">Deals</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PC Games Hub. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js" defer></script>
+<script>
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) { const top = el.getBoundingClientRect().top + window.scrollY - 96; window.scrollTo({ top, behavior: 'smooth' }); }
+    document.querySelectorAll('.faq-cat-btn').forEach(b => b.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+  }
+
+  // FAQ Search
+  document.getElementById('faq-search-input')?.addEventListener('input', function() {
+    const q = this.value.toLowerCase().trim();
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = (!q || text.includes(q)) ? '' : 'none';
+    });
+    document.querySelectorAll('.faq-section-title').forEach(title => {
+      const nextItems = [];
+      let el = title.nextElementSibling;
+      while (el && el.classList.contains('faq-item')) { nextItems.push(el); el = el.nextElementSibling; }
+      const anyVisible = nextItems.some(i => i.style.display !== 'none');
+      title.style.display = (!q || anyVisible) ? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>

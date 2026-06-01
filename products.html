@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC & Laptop Games — Browse 50,000+ Titles | PC Games Hub</title>
+  <meta name="description" content="Browse our massive library of 50,000+ PC and laptop games. Filter by genre, price, and rating. Best prices guaranteed with instant digital delivery.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pcgameshub.com/products.html">
+  <meta property="og:title" content="Browse 50,000+ PC Games — PC Games Hub">
+  <meta property="og:description" content="Find your next favorite game. 50,000+ titles with instant digital delivery and best price guarantee.">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"PC Games Catalog","description":"Browse our library of 50,000+ PC and laptop games","url":"https://pcgameshub.com/products.html"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .search-bar { display:flex; gap:12px; margin-bottom:32px; }
+    .search-bar input { flex:1; padding:12px 20px; border-radius:var(--radius-md); border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary); font-size:1rem; transition:var(--transition); }
+    .search-bar input:focus { outline:none; border-color:var(--accent-1); box-shadow:0 0 0 3px var(--accent-glow); }
+    .sidebar { width:260px; flex-shrink:0; }
+    .products-layout { display:flex; gap:32px; align-items:flex-start; }
+    .products-main { flex:1; min-width:0; }
+    @media(max-width:900px){ .sidebar{display:none;} }
+    .filter-panel { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px; position:sticky; top:88px; }
+    .filter-panel h3 { font-size:0.8rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px; }
+    .filter-check { display:flex; align-items:center; gap:10px; margin-bottom:8px; cursor:pointer; font-size:0.9rem; color:var(--text-secondary); }
+    .filter-check input[type=checkbox] { accent-color:var(--accent-1); width:16px; height:16px; cursor:pointer; }
+    .filter-check:hover { color:var(--text-primary); }
+    .price-range { display:flex; flex-direction:column; gap:8px; }
+    .price-range input[type=range] { width:100%; accent-color:var(--accent-1); }
+    .price-range .price-labels { display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); }
+    .results-meta { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+    .results-meta span { font-size:0.9rem; color:var(--text-muted); }
+    .sort-select { padding:8px 12px; border-radius:var(--radius-md); border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary); font-size:0.875rem; cursor:pointer; }
+    .sort-select:focus { outline:none; border-color:var(--accent-1); }
+    .load-more { display:flex; justify-content:center; margin-top:40px; }
+    .special-banner { background:var(--gradient-btn); border-radius:var(--radius-lg); padding:28px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:40px; flex-wrap:wrap; }
+    .special-banner h3 { color:#fff; font-size:1.25rem; }
+    .special-banner p { color:rgba(255,255,255,0.8); font-size:0.9rem; margin-top:4px; }
+  </style>
+</head>
+<body>
+
+<header class="navbar" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">🎮</div><span>PC Games<span class="text-gradient">Hub</span></span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <a href="products.html" class="btn btn-primary btn-sm nav-cta">Browse Games</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<section class="page-hero" aria-labelledby="products-hero-title">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">›</span><span>Games</span></div>
+    <span class="badge">🎮 50,000+ Titles</span>
+    <h1 id="products-hero-title" class="display-2" style="margin-top:16px;">Find Your Next <span class="text-gradient">Favorite Game</span></h1>
+    <p>Instant digital delivery · Best price guarantee · 30-day refund policy</p>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+
+    <!-- Special Banner -->
+    <div class="special-banner animate-on-scroll">
+      <div>
+        <h3>🔥 Summer Sale — Up to 80% Off!</h3>
+        <p>Limited time deals on hundreds of top titles. Ends Sunday at midnight.</p>
+      </div>
+      <a href="#" class="btn btn-white">Shop the Sale →</a>
+    </div>
+
+    <!-- Search -->
+    <div class="search-bar animate-on-scroll">
+      <input type="search" placeholder="🔍  Search games, genres, publishers..." aria-label="Search games">
+      <button class="btn btn-primary">Search</button>
+    </div>
+
+    <!-- Filter Bar (mobile) -->
+    <div class="filter-bar animate-on-scroll" role="group" aria-label="Filter by genre">
+      <button class="filter-btn active" data-filter="all">All Games</button>
+      <button class="filter-btn" data-filter="rpg">RPG</button>
+      <button class="filter-btn" data-filter="fps">FPS</button>
+      <button class="filter-btn" data-filter="strategy">Strategy</button>
+      <button class="filter-btn" data-filter="adventure">Adventure</button>
+      <button class="filter-btn" data-filter="sports">Sports</button>
+      <button class="filter-btn" data-filter="horror">Horror</button>
+      <button class="filter-btn" data-filter="racing">Racing</button>
+      <button class="filter-btn" data-filter="indie">Indie</button>
+    </div>
+
+    <div class="products-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Filters">
+        <div class="filter-panel">
+          <h3>Price Range</h3>
+          <div class="price-range" style="margin-bottom:24px;">
+            <input type="range" min="0" max="100" value="80" id="price-range">
+            <div class="price-labels"><span>$0</span><span id="price-val">$80</span></div>
+          </div>
+
+          <h3>Platform</h3>
+          <div style="margin-bottom:24px;">
+            <label class="filter-check"><input type="checkbox" checked> Windows</label>
+            <label class="filter-check"><input type="checkbox" checked> macOS</label>
+            <label class="filter-check"><input type="checkbox"> Linux</label>
+            <label class="filter-check"><input type="checkbox"> Steam Deck</label>
+          </div>
+
+          <h3>Rating</h3>
+          <div style="margin-bottom:24px;">
+            <label class="filter-check"><input type="checkbox" checked> ⭐⭐⭐⭐⭐ (5)</label>
+            <label class="filter-check"><input type="checkbox" checked> ⭐⭐⭐⭐ (4+)</label>
+            <label class="filter-check"><input type="checkbox"> ⭐⭐⭐ (3+)</label>
+          </div>
+
+          <h3>Release Date</h3>
+          <div style="margin-bottom:24px;">
+            <label class="filter-check"><input type="checkbox"> 2026</label>
+            <label class="filter-check"><input type="checkbox" checked> 2025</label>
+            <label class="filter-check"><input type="checkbox" checked> 2024</label>
+            <label class="filter-check"><input type="checkbox"> Older</label>
+          </div>
+
+          <h3>Features</h3>
+          <div>
+            <label class="filter-check"><input type="checkbox"> Multiplayer</label>
+            <label class="filter-check"><input type="checkbox"> Co-op</label>
+            <label class="filter-check"><input type="checkbox"> Controller Support</label>
+            <label class="filter-check"><input type="checkbox"> VR Compatible</label>
+            <label class="filter-check"><input type="checkbox"> Cloud Saves</label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Grid -->
+      <div class="products-main">
+        <div class="results-meta">
+          <span>Showing <strong>24</strong> of <strong>50,247</strong> games</span>
+          <select class="sort-select" aria-label="Sort games">
+            <option>Best Selling</option>
+            <option>Newest First</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Highest Rated</option>
+            <option>Biggest Discount</option>
+          </select>
+        </div>
+
+        <div class="games-grid">
+
+
+          <!-- Game cards -->
+          <article class="game-card animate-on-scroll" data-category="rpg">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#0f0c29,#302b63)">⚔️<span class="new-badge">NEW</span></div>
+            <div class="game-card-info"><p class="game-card-genre">RPG · Action</p><h3>Shadow Realm: Origins</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.9</span><span class="game-card-price">$29.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-1" data-category="fps">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#1a1a2e,#2d1b69)">🔫<span class="discount">-40%</span></div>
+            <div class="game-card-info"><p class="game-card-genre">FPS · Multiplayer</p><h3>Neon Strike Force</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.8</span><span class="game-card-price"><span class="original">$39.99</span>$23.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-2" data-category="strategy">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#134e5e,#71b280)">🏰</div>
+            <div class="game-card-info"><p class="game-card-genre">Strategy · RTS</p><h3>Empire Builder Pro</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.7</span><span class="game-card-price">$34.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-3" data-category="adventure">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#200122,#6f0000)">🗺️<span class="discount">-25%</span></div>
+            <div class="game-card-info"><p class="game-card-genre">Adventure · Open World</p><h3>The Last Frontier</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.9</span><span class="game-card-price"><span class="original">$49.99</span>$37.49</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll" data-category="racing">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#f7971e,#ffd200)">🏎️<span class="new-badge">HOT</span></div>
+            <div class="game-card-info"><p class="game-card-genre">Racing · Simulation</p><h3>Turbo Championship 2026</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.6</span><span class="game-card-price">$44.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-1" data-category="horror">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#0a0a0a,#1a1a1a)">👻<span class="discount">-60%</span></div>
+            <div class="game-card-info"><p class="game-card-genre">Horror · Survival</p><h3>Depths of Terror</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.5</span><span class="game-card-price"><span class="original">$24.99</span>$9.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-2" data-category="sports">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#0f9b58,#00bf8f)">⚽</div>
+            <div class="game-card-info"><p class="game-card-genre">Sports · Simulation</p><h3>World Soccer League 26</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.8</span><span class="game-card-price">$59.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-3" data-category="rpg">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#4568dc,#b06ab3)">🧙<span class="new-badge">NEW</span></div>
+            <div class="game-card-info"><p class="game-card-genre">RPG · Fantasy</p><h3>Arcane Chronicles</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.9</span><span class="game-card-price">$39.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll" data-category="indie">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#43cea2,#185a9d)">🌿</div>
+            <div class="game-card-info"><p class="game-card-genre">Indie · Puzzle</p><h3>Mossy Grounds</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.7</span><span class="game-card-price">$9.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-1" data-category="fps">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#373b44,#4286f4)">🚁<span class="discount">-35%</span></div>
+            <div class="game-card-info"><p class="game-card-genre">FPS · Tactical</p><h3>Ghost Operative</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.8</span><span class="game-card-price"><span class="original">$44.99</span>$29.24</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-2" data-category="strategy">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#1e3c72,#2a5298)">🚀</div>
+            <div class="game-card-info"><p class="game-card-genre">Strategy · 4X</p><h3>Galactic Dominion</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.6</span><span class="game-card-price">$27.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-3" data-category="adventure">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#614385,#516395)">🔮<span class="new-badge">NEW</span></div>
+            <div class="game-card-info"><p class="game-card-genre">Adventure · Puzzle</p><h3>Crystal Labyrinth</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.5</span><span class="game-card-price">$19.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll" data-category="indie">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#f953c6,#b91d73)">🎵<span class="discount">-50%</span></div>
+            <div class="game-card-info"><p class="game-card-genre">Indie · Rhythm</p><h3>Beat Weaver</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.9</span><span class="game-card-price"><span class="original">$15.99</span>$7.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-1" data-category="rpg">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#093028,#237a57)">🐉</div>
+            <div class="game-card-info"><p class="game-card-genre">RPG · JRPG</p><h3>Dragon's Legacy</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.8</span><span class="game-card-price">$49.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-2" data-category="horror">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#1c1c1c,#333)">🕯️<span class="new-badge">NEW</span></div>
+            <div class="game-card-info"><p class="game-card-genre">Horror · Atmospheric</p><h3>The Quiet Dark</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.7</span><span class="game-card-price">$22.99</span></div></div>
+          </article>
+
+          <article class="game-card animate-on-scroll animate-delay-3" data-category="racing">
+            <div class="game-card-thumb" style="background:linear-gradient(135deg,#e96c2a,#f7c948)">🏍️<span class="discount">-20%</span></div>
+            <div class="game-card-info"><p class="game-card-genre">Racing · Arcade</p><h3>Moto Blitz X</h3><div class="game-card-meta"><span class="game-card-rating">⭐ 4.4</span><span class="game-card-price"><span class="original">$24.99</span>$19.99</span></div></div>
+          </article>
+        </div>
+
+        <div class="load-more">
+          <button class="btn btn-secondary btn-lg" id="load-more-btn">
+            Load More Games <span style="margin-left:4px;">↓</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><div class="logo-icon">🎮</div><span>PC Games<span class="text-gradient">Hub</span></span></a>
+        <p>The ultimate destination for PC and laptop gamers worldwide.</p>
+        <div class="social-links"><a href="#" class="social-link" aria-label="Twitter">🐦</a><a href="#" class="social-link" aria-label="Discord">💬</a><a href="#" class="social-link" aria-label="YouTube">📺</a></div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="products.html">All Games</a></li><li><a href="products.html">New Releases</a></li><li><a href="products.html">Best Sellers</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PC Games Hub. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js" defer></script>
+<script>
+  // Price range
+  const range = document.getElementById('price-range');
+  const val = document.getElementById('price-val');
+  if(range) range.addEventListener('input', () => val.textContent = '$' + range.value);
+  
+  // Load more simulation
+  document.getElementById('load-more-btn')?.addEventListener('click', function(){
+    this.textContent = 'Loading...';
+    setTimeout(() => { this.textContent = 'No More Games to Load ✓'; this.disabled = true; }, 1200);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /account/
+Disallow: /*.json$
+
+# Allow all crawlers on public content
+Allow: /index.html
+Allow: /about.html
+Allow: /products.html
+Allow: /blog.html
+Allow: /contact.html
+Allow: /faq.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# Crawl-delay for polite crawlers
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://pcgameshub.com/sitemap.xml

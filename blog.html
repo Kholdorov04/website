@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Blog — Tips, Reviews & News | PC Games Hub</title>
+  <meta name="description" content="The latest PC gaming news, in-depth game reviews, hardware tips, and buying guides from the experts at PC Games Hub.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pcgameshub.com/blog.html">
+  <meta property="og:title" content="Gaming Blog — PC Games Hub">
+  <meta property="og:description" content="PC gaming news, reviews, tips and buying guides.">
+  <meta property="og:type" content="blog">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"PC Games Hub Blog","description":"PC gaming news, reviews and tips","url":"https://pcgameshub.com/blog.html"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .blog-featured { display:grid; grid-template-columns:1.5fr 1fr; gap:28px; margin-bottom:64px; }
+    @media(max-width:900px){ .blog-featured { grid-template-columns:1fr; } }
+    .blog-featured-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-xl); overflow:hidden; transition:var(--transition); }
+    .blog-featured-card:hover { border-color:var(--border-accent); transform:translateY(-4px); box-shadow:var(--shadow-glow); }
+    .blog-featured-thumb { width:100%; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; font-size:4rem; background:var(--bg-secondary); }
+    .blog-featured-body { padding:28px; }
+    .blog-featured-body h2 { font-size:1.4rem; margin:10px 0; line-height:1.35; }
+    .blog-featured-body p { color:var(--text-secondary); line-height:1.7; margin-bottom:16px; }
+    .blog-sidebar { display:flex; flex-direction:column; gap:16px; }
+    .blog-mini-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 18px; display:flex; gap:14px; align-items:center; transition:var(--transition); cursor:pointer; }
+    .blog-mini-card:hover { border-color:var(--border-accent); }
+    .blog-mini-thumb { width:56px; height:56px; border-radius:var(--radius-sm); background:var(--bg-secondary); display:flex; align-items:center; justify-content:center; font-size:1.75rem; flex-shrink:0; }
+    .blog-mini-card h4 { font-size:0.875rem; line-height:1.4; margin-bottom:4px; }
+    .blog-mini-card span { font-size:0.75rem; color:var(--text-muted); }
+  </style>
+</head>
+<body>
+
+<header class="navbar" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">🎮</div><span>PC Games<span class="text-gradient">Hub</span></span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <a href="products.html" class="btn btn-primary btn-sm nav-cta">Browse Games</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<section class="page-hero" aria-labelledby="blog-hero-title">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">›</span><span>Blog</span></div>
+    <span class="badge">📝 Editorial</span>
+    <h1 id="blog-hero-title" class="display-2" style="margin-top:16px;">Gaming News, Reviews & <span class="text-gradient">Expert Guides</span></h1>
+    <p>Insights from our editorial team — game reviews, hardware roundups, tips, and the latest from the gaming world.</p>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+
+    <!-- Categories filter -->
+    <div class="filter-bar animate-on-scroll" role="group" aria-label="Blog categories" style="margin-bottom:48px;">
+      <button class="filter-btn active">All Posts</button>
+      <button class="filter-btn">Reviews</button>
+      <button class="filter-btn">News</button>
+      <button class="filter-btn">Guides</button>
+      <button class="filter-btn">Hardware</button>
+      <button class="filter-btn">Deals</button>
+      <button class="filter-btn">Indie Spotlight</button>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="blog-featured animate-on-scroll">
+      <a href="#" class="blog-featured-card" aria-label="Read: The 10 Best RPGs of 2026 So Far">
+        <div class="blog-featured-thumb" style="background:linear-gradient(135deg,#0f0c29,#302b63,#24243e)">⚔️</div>
+        <div class="blog-featured-body">
+          <div class="blog-meta"><span class="tag">Review</span><time datetime="2026-05-28">May 28, 2026</time></div>
+          <h2>The 10 Best RPGs of 2026 So Far — Ranked and Reviewed</h2>
+          <p>It's been an incredible year for RPG fans. We played every major release so you don't have to. Here are the ten titles that deserve a spot in every library — and why Shadow Realm: Origins tops them all.</p>
+          <span class="blog-read-more">Read Full Review →</span>
+        </div>
+      </a>
+
+      <div class="blog-sidebar">
+        <a href="#" class="blog-mini-card" aria-label="Read: RTX 5090 vs RX 9800 XT">
+          <div class="blog-mini-thumb" style="background:linear-gradient(135deg,#134e5e,#71b280)">💻</div>
+          <div><h4>RTX 5090 vs RX 9800 XT: Which GPU Should You Buy in 2026?</h4><span>Hardware · May 25, 2026</span></div>
+        </a>
+        <a href="#" class="blog-mini-card" aria-label="Read: Top 20 Free PC Games">
+          <div class="blog-mini-thumb" style="background:linear-gradient(135deg,#f7971e,#ffd200)">🆓</div>
+          <div><h4>Top 20 Free-to-Play PC Games Worth Your Time Right Now</h4><span>Guide · May 22, 2026</span></div>
+        </a>
+        <a href="#" class="blog-mini-card" aria-label="Read: Indie gems you missed">
+          <div class="blog-mini-thumb" style="background:linear-gradient(135deg,#f953c6,#b91d73)">💎</div>
+          <div><h4>5 Indie Gems You Definitely Missed This Year (And Must Play)</h4><span>Indie Spotlight · May 19, 2026</span></div>
+        </a>
+        <a href="#" class="blog-mini-card" aria-label="Read: Summer Sale Guide 2026">
+          <div class="blog-mini-thumb" style="background:linear-gradient(135deg,#0f9b58,#00bf8f)">💰</div>
+          <div><h4>PC Games Hub Summer Sale 2026: Complete Buyer's Guide</h4><span>Deals · May 15, 2026</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- All Posts Grid -->
+    <div class="section-header animate-on-scroll" style="text-align:left; max-width:100%; margin-bottom:32px;">
+      <h2 class="h1">Latest Articles</h2>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-card animate-on-scroll animate-delay-1">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#4568dc,#b06ab3)">🧙</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="tag">Guide</span><time datetime="2026-05-30">May 30, 2026</time></div>
+          <h3>Beginner's Guide to PC Gaming in 2026: Everything You Need to Know</h3>
+          <p>New to PC gaming? Don't worry. This comprehensive guide covers hardware, game stores, settings optimization, and communities to join.</p>
+          <span class="blog-read-more">Read More →</span>
+        </div>
+      </article>
+
+      <article class="blog-card animate-on-scroll animate-delay-2">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#1a1a2e,#2d1b69)">🔫</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="tag">Review</span><time datetime="2026-05-27">May 27, 2026</time></div>
+          <h3>Neon Strike Force Review: The FPS That Redefines Competitive Multiplayer</h3>
+          <p>We spent 40 hours in Neon Strike Force's servers. Here's our full verdict on the game taking the competitive scene by storm.</p>
+          <span class="blog-read-more">Read More →</span>
+        </div>
+      </article>
+
+      <article class="blog-card animate-on-scroll animate-delay-3">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#f7971e,#ffd200)">⚙️</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="tag">Hardware</span><time datetime="2026-05-24">May 24, 2026</time></div>
+          <h3>Best Budget Gaming Laptops Under $800 in 2026 — Tested & Ranked</h3>
+          <p>You don't need to spend a fortune to game well. We tested 12 laptops under $800 and these five deliver the best frame rates per dollar.</p>
+          <span class="blog-read-more">Read More →</span>
+        </div>
+      </article>
+
+      <article class="blog-card animate-on-scroll animate-delay-1">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#093028,#237a57)">🌱</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="tag">News</span><time datetime="2026-05-20">May 20, 2026</time></div>
+          <h3>The Rise of Eco-Gaming: How Studios Are Going Carbon Neutral by 2027</h3>
+          <p>A growing number of game studios are committing to sustainability targets. Here's who's leading the charge and what it means for the industry.</p>
+          <span class="blog-read-more">Read More →</span>
+        </div>
+      </article>
+
+      <article class="blog-card animate-on-scroll animate-delay-2">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#614385,#516395)">🏆</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="tag">Guide</span><time datetime="2026-05-17">May 17, 2026</time></div>
+          <h3>How to Maximize PC Games Hub Loyalty Points: The Complete Strategy</h3>
+          <p>Our power users earn free games every month. Here's the exact strategy to stack points fast using purchases, reviews, and referrals.</p>
+          <span class="blog-read-more">Read More →</span>
+        </div>
+      </article>
+
+      <article class="blog-card animate-on-scroll animate-delay-3">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#200122,#6f0000)">🎬</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="tag">News</span><time datetime="2026-05-14">May 14, 2026</time></div>
+          <h3>Game Adaptations: 7 Movies and Shows Based on PC Games Coming in 2026</h3>
+          <p>Hollywood has discovered gaming. Here are the most exciting upcoming adaptations — from the promising to the utterly terrifying.</p>
+          <span class="blog-read-more">Read More →</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- Newsletter CTA -->
+    <div class="card animate-on-scroll" style="text-align:center; max-width:600px; margin:64px auto 0; padding:48px;">
+      <div style="font-size:2.5rem; margin-bottom:16px;">📬</div>
+      <h2 style="margin-bottom:12px;">Get the Best Gaming Content Weekly</h2>
+      <p style="color:var(--text-secondary);margin-bottom:28px;">Join 180,000 subscribers. One email per week — no spam, only the best gaming content.</p>
+      <form class="newsletter-form" style="justify-content:center;" aria-label="Blog newsletter">
+        <input type="email" placeholder="Your email address" aria-label="Email address" required style="max-width:280px;">
+        <button type="submit" class="btn btn-primary">Subscribe Free</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="logo-icon">🎮</div><span>PC Games<span class="text-gradient">Hub</span></span></a><p>The ultimate destination for PC and laptop gamers worldwide.</p><div class="social-links"><a href="#" class="social-link" aria-label="Twitter">🐦</a><a href="#" class="social-link" aria-label="Discord">💬</a><a href="#" class="social-link" aria-label="YouTube">📺</a></div></div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="products.html">All Games</a></li><li><a href="products.html">New Releases</a></li><li><a href="products.html">Best Sellers</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PC Games Hub. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js" defer></script>
+</body>
+</html>
